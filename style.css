@@ -1,7 +1,60 @@
 
+h1{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 0.6;
+    margin-bottom: 0;
+    
+}
+
+p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    
+}
+
+a{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.15rem;
+}
+
+
+/* ----- Sectioner ----- */
+
+#first_section {
+background-image: url("indhold_til_tema_opgave/1x/Artboard 1_3.png");
+height: 90vh;
+width: auto;
+max-width: none;
+max-height: 100%;
+background-position: 50%;
+background-repeat: no-repeat;
+}
+
+
+#product_section .col_left {
+    background-color: #FFC8B5;
+}
+
+#product_section .col_right {
+    background-color: #D4FFE2;
+    padding: 0;
+}
+
+
+
+
 /* root er en selector der lægger sig i roden af det hele. Eller.. rundt om det hele */
 
-
 :root{
-    
+    --bs-font-sans-serif: none;
+    --pl-5:;
+    --bs-gutter-x: 0rem; 
+    /* Slipper for sidelens scroll funktion! */
+}
+
+:root .row {
+    --bs-gutter-x: 0rem; 
+    /* Slipper for sidelens scroll funktion! */
 }
