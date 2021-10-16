@@ -25,7 +25,7 @@ var tl = gsap.timeline({
     trigger: "#raad_section",
     scrub: 1,
     start: "right bottom",
-    end: "+=25"
+    end: "+=100"
   }
 });
 

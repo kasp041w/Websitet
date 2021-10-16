@@ -33,6 +33,11 @@ a{
     font-size: 1.15rem;
 }
 
+main{
+    max-width: 100vw;
+    overflow: hidden;
+}
+
 .btn-primary{
     background-color:black;
     max-width: 200px;
@@ -128,7 +133,7 @@ margin: 50px auto 50px auto;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100vw;
-    height: 174vw;
+    height: 300vw;
     position: relative;
 }
 
@@ -168,14 +173,27 @@ width: 100%;
     overflow: auto;
   white-space: nowrap;
 }
+::-webkit-scrollbar-track {
+    background:white; 
+  }
 
 #some_section .insta_div img {
   width: 80vw;
-  max-width: 600px;
+  max-width: 300px;
   display: inline-block;
+  margin-bottom: 20px;
+  box-shadow: 4px 6px 17px 6px rgba(0,0,0,0.27);
 }
 
+@media screen and (min-width: 400px){
+    .background_img_lastsec{
+        height: 250vw;
+    }
 @media screen and (min-width: 600px){
+    .background_img_lastsec{
+        height: 200vw;
+    }
+@media screen and (min-width: 800px){
     .background_img_lastsec{
         height: 150vw;
     }
@@ -211,7 +229,9 @@ footer img{
     /* Slipper for sidelens scroll funktion! */
 }
 
-
+.carousel-item{
+    transition: transform 1s cubic-bezier(0.47, -0.39, 0.5, 1.59);
+}
 
 
 
